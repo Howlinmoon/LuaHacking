@@ -54,3 +54,80 @@ else
   print("5 is not greater than 10\n")
 end
 
+
+
+if 10 < 5 then
+  print("10 is < 5?!")
+elseif 20 < 15 then
+  print("20 is < 15?!")
+elseif 30 > 20 then
+  print("30 is greater than 20")
+else
+  print("None of these statements are true!")
+end
+
+
+
+-- similar to python
+-- lua can check the type of objects
+
+print(type(20))
+
+testVar = "something cool"
+testVar = true
+
+if type(testVar) == "number" then
+  print("testVar is a number")
+elseif type(testVar) == "string" then
+  print("testVar is a string")
+else
+  print("I don't know what testVar is")
+end
+
+
+
+-- Loops
+
+-- while loop
+iter = 0
+while iter <= 10 do
+  print(iter)
+  iter = iter +1
+end
+
+
+-- for loop
+for i = 0, 10 do
+  print(i)
+end
+
+-- for loop with non-default increment
+
+for i = 0, 10, 2 do
+  print(i)
+end
+
+
+-- Continue at 5:28 of Part 4 - Loops
+
+-- repeat until loop
+-- same as 'do...while' type loops
+-- always runs at least once
+
+iter = 20
+repeat 
+  print(iter)
+  iter = iter + 1
+until iter > 10
+
+
+-- Control statements
+-- actually only a single one - 'break'
+
+for i = 0, 10 do
+  print(i)
+  if i == 5 then
+    break
+  end
+end
+
