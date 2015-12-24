@@ -166,7 +166,10 @@ Vector2.mt.__newindex = function(t, k, v)
   error("Cannot change values of vector2 instance.")
 end
 
+
+-- This will now cause the above error to assert
 v1 = Vector2.New()
 v1.x = 10
 v1.y = 20
+
 
