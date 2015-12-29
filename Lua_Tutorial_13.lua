@@ -67,5 +67,6 @@ d()
 d()
 d()
 d()
-d()
+-- one past the end results in an error about a dead coroutine
+-- d()
 
