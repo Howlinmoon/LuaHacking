@@ -1,5 +1,5 @@
 -- Lua Tutorial #17 - Math Functions
-
+-- Just explains them 
 math.abs(-50)
 math.pi
 math.sin(math.pi)
