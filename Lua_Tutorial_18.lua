@@ -57,3 +57,5 @@ s = table.concat(t, ", ")
 
 print(s)
 print("")
+
+- NOTE - trailing ", " suppressed!
