@@ -153,11 +153,12 @@ s = "dogcat cat catfish strcat"
 print(string.gsub(s, "%f[%a]cat%f[%A]", "dog"))
 -- matches/substitutes only the lone 'cat'
 
--- replacements
+-- replacements, _G global env
 s = "$varname = $value"
 varname = "var"
 value = "2"
 print(string.gsub(s, "$(%w+)", _G))
+
 
 
 
