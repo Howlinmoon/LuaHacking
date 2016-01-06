@@ -87,6 +87,26 @@ print(string.match(s, "%d+/%d+/%d+"))
 -- returns 01 05 2016 portions
 
 
+s = "Today is 1/6/2016 (January sixth, 2016 )."
+print(string.match(s, "%(%s*.*%s*%)"))
+
+s = "The number is ...54"
+-- only matches last period!
+print(string.match(s, "%.?%d+"))
+
+print("lazy repetitions")
+-- lazy repetitions
+s = "int x = 0; /* init x */ int y = 0; /* init y */"
+print(string.match(s, "/%*.-%*/"))
+
+
+-- handle numbers that can be simple "1", or more complex "-4.35"
+-- "-?" zero or more negative signs
+-- "%d*" zero or more digits
+s = "The value of 'x' is 40."
+print(string.match(s, "-?%d*%.%d"))
+
+
 
 
 
