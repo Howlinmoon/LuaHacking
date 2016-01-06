@@ -100,11 +100,65 @@ s = "int x = 0; /* init x */ int y = 0; /* init y */"
 print(string.match(s, "/%*.-%*/"))
 
 
--- handle numbers that can be simple "1", or more complex "-4.35"
--- "-?" zero or more negative signs
--- "%d*" zero or more digits
-s = "The value of 'x' is 40."
-print(string.match(s, "-?%d*%.%d"))
+-- anchors
+s = "2 Hello World 5"
+print(string.match(s, "^%d"))
+-- prints 2
+
+print(string.match(s, "%d$"))
+-- prints 5
+
+print("turning vowels into underscores")
+s = "This is a String with a number 25"
+print(string.gsub(s, "[aeiouAEIOU]", "_"))
+
+-- ranges
+s = "1234567890ABCDEF"
+-- match just 0 through 7
+print(string.gsub(s, "[0-7]", "_"))
+
+print("matching everything but 'A'")
+print(string.gsub(s, "[^A]", "_"))
+
+print("something with a number")
+s = "This is a number: -12.25"
+print(string.match(s, "[+-]?%d+%.?%d*]?"))
+
+-- captures
+
+s = "num1 = 2, num2 = 3"
+-- grabs just num1 and its value
+print(string.match(s, "([_%a][_%w]*)%s*=%s*(%d+)"))
+-- returns num1 and 2
+
+-- capture the values into the variables
+var,value = string.match(s, "([_%a][_%w]*)%s*=%s*(%d+)")
+
+print(var)
+print(value)
+
+-- somewhat more complex
+s = "[[init num]] name = \"Bob\" --move on"
+print(string.match(s, "([_%a][_%w]*)%s*=%s*([\"'])(%a+)%2"))
+
+-- matching between opening and closing
+
+s = "This is in parantheses: (hello)"
+print(string.match(s, "%b()"))
+
+
+print("frontier pattern")
+-- last example
+s = "dogcat cat catfish strcat"
+print(string.gsub(s, "%f[%a]cat%f[%A]", "dog"))
+-- matches/substitutes only the lone 'cat'
+
+-- replacements
+s = "$varname = $value"
+varname = "var"
+value = "2"
+print(string.gsub(s, "$(%w+)", _G))
+
 
 
 
