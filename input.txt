@@ -1,0 +1,11 @@
+5678
+9101112
+This is a sample text file
+This is another line of the sample
+This was created for the Lua Tutorial #22 - IO Library
+This line contains numbers 12345
+This is yet another line
+As is this one
+And this one
+Thaaat's All Folks!
+
