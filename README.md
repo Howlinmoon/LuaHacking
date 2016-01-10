@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=IHpEDVugNp4&index=25&list=PL0o3fqwR2CsWg_ockSMN6
 
 Starting Tutorial #25 - Miscellaneous functions
 
-
+No time to work on this today...
 
 
 
