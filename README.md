@@ -3,11 +3,18 @@
 Following the Lua 5.2 Tutuorial Series on Youtube
 
 Left Off with Video:
-https://www.youtube.com/watch?v=IHpEDVugNp4&index=25&list=PL0o3fqwR2CsWg_ockSMN6FActmMOJ70t_
+https://www.youtube.com/watch?v=b434w7yuoZ8
 
-Starting Tutorial #25 - Miscellaneous functions
+This will be the 2nd video on 5.3 changes
 
-No time to work on this today...
+After this - resume on video:
+
+https://www.youtube.com/watch?v=G2tUYY5pa7c&list=PL0o3fqwR2CsWg_ockSMN6FActmMOJ70t_&index=27
+
+Which begins the C library interfacing videos
+
+
+
 
 
 
